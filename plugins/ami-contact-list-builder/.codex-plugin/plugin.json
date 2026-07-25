@@ -1,0 +1,30 @@
+{
+  "name": "ami-contact-list-builder",
+  "version": "0.2.1",
+  "description": "Guides architects through building a clean, segmented contact list from email history for Sunshine Island CRM, with optional user-defined project and client-type tags.",
+  "homepage": "https://github.com/EricBobrow/ami-contact-list-tools",
+  "repository": "https://github.com/EricBobrow/ami-contact-list-tools",
+  "author": {
+    "name": "Architect Marketing Institute",
+    "email": "support@archmarketing.org"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AMI Professional Contact List Builder",
+    "shortDescription": "Turn email history into a reviewed, CRM-ready contact list.",
+    "longDescription": "A guided AMI workflow for architects. It asks simple setup questions, runs a small pilot, finds professionally relevant contacts and interactions, suggests AMI relationship segments, applies an optional user-approved set of project or client-type tags, matches likely duplicate identities, formats phone numbers, and prepares a reviewed workbook and CSV for Sunshine Island CRM.",
+    "developerName": "Architect Marketing Institute",
+    "category": "Productivity",
+    "capabilities": [
+      "Guided email-source setup",
+      "Professional contact discovery",
+      "CRM segmentation and review",
+      "Optional project and client niche tagging",
+      "Sunshine Island CRM-ready spreadsheet output"
+    ],
+    "defaultPrompt": "Use $ami-contact-list-builder to build a reviewed contact list from my email history for Sunshine Island CRM.",
+    "websiteURL": "https://github.com/EricBobrow/ami-contact-list-tools",
+    "logo": "./assets/ami-logo.svg",
+    "brandColor": "#56B7D3"
+  }
+}
