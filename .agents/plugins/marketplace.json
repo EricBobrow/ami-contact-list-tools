@@ -1,0 +1,20 @@
+{
+  "name": "ami-contact-list-tools",
+  "interface": {
+    "displayName": "AMI Contact List Tools"
+  },
+  "plugins": [
+    {
+      "name": "ami-contact-list-builder",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ami-contact-list-builder"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
