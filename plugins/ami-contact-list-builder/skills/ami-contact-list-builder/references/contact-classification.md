@@ -1,5 +1,17 @@
 # Contact Relevance, Segmentation, and Identity Matching
 
+## Evidence review method
+
+Use broad search terms to find candidates, then decide relevance from message-level evidence. Review:
+
+- subject and current message content
+- sender, recipients, and whether the user sent, received, or replied to the message
+- signature details that identify the person or organization
+- proposals, drawings, attachments, meetings, fees, invoices, permits, project names, addresses, participants, or other concrete context
+- reciprocal correspondence or project material sent by the user
+
+Treat direct project discussion, a substantive professional exchange, or repeated relevant correspondence as strong evidence. A keyword is only a search lead. Do not retain a contact merely because a word appears in an old quoted message, a signature, a newsletter, a mass solicitation, or an unrelated phrase such as `graphic design`.
+
 ## Qualifying professional correspondence
 
 Include a person when the email history contains evidence of a professional relationship relevant to architecture, projects, clients, referrals, consultants, builders, the built environment, or the operation and marketing of the architect's firm.
@@ -8,10 +20,17 @@ Examples include:
 
 - past or active architectural clients
 - prospective clients who discussed a possible project
-- builders, contractors, trades, and suppliers involved in projects
-- engineers, interior designers, landscape architects, planners, surveyors, and other consulting professionals
+- architectural services, consultations, feasibility studies, proposals, retainers, fees, invoices, drawings, revisions, submissions, and project coordination
+- residential, commercial, mixed-use, multi-unit, renovation, addition, fit-up, redevelopment, and new-construction discussions
+- permits, planning, zoning, variances, heritage, building-code, accessibility, fire, inspections, occupancy, and municipal review
+- structural, civil, mechanical, electrical, geotechnical, building-science, environmental, septic, HVAC, and other project engineering
+- surveys, grading, servicing, stormwater, arborist work, site studies, and environmental studies
+- builders, contractors, trades, suppliers, and construction managers involved in projects
+- architects, interior designers, landscape architects, planners, surveyors, and other consulting professionals
+- real-estate agents, brokers, developers, owners, investors, appraisers, development-finance contacts, and other people involved in a plausible property or project opportunity
 - referral partners or people who introduced potential clients
 - other professionally relevant people discussing projects, architecture, property, clients, or industry matters
+- students, interns, job applicants, or employment contacts when the user wants professional-network records, while keeping them under outreach review by default
 
 Exclude:
 
@@ -19,7 +38,31 @@ Exclude:
 - automated notices, receipts, system messages, newsletters, and no-reply senders
 - clearly personal correspondence with no professional relevance
 - spam and mass solicitations
+- one-way sales pitches for marketing, advertising, SEO, websites, software, insurance, banking, travel, events, or unrelated business services when the user did not engage about a relevant project or professional relationship
+- course promotions, awards solicitations, publication offers, sponsorship requests, and generic vendor offerings without substantive reciprocal correspondence
 - generic role addresses when no individual can be identified, unless the user specifically wants organizations represented
+
+When a plausible contact has mixed evidence, retain the interaction only in Needs Review until the user decides. Do not let a broad search term override a clear exclusion.
+
+## Primary Contact Type for review
+
+Assign one primary `Contact Type` to organize the review workbook. This is separate from relationship tags and does not imply marketing permission.
+
+Use the closest supported type:
+
+1. `Client / Prospect`
+2. `Engineers`
+3. `Planning / Municipal / Government`
+4. `Surveyors / Designers / Consultants`
+5. `Contractors / Builders / Trades`
+6. `Real Estate / Development / Finance`
+7. `Referral / Industry`
+8. `Employment / Talent`
+9. `Other Professional`
+
+Choose the type from the person's primary role in the relevant correspondence, not from a keyword or company name alone. If two types are plausible, choose the best primary type and explain the alternative in Review Notes. Put uncertain cases in Needs Review as `Uncertain Contact Type`.
+
+After the pilot, sort Contacts so each Contact Type forms one continuous block. Use a subtle visual marker on the first row of each block when the spreadsheet format supports it. Do not copy Contact Type into the CRM `Tags` field unless the user explicitly approves matching CRM tags.
 
 ## Approved AMI relationship tags
 
@@ -77,12 +120,15 @@ A matching name is a signal for review, not automatic proof.
 Create a potential identity match when two records have the same or very similar name but different email addresses. Compare:
 
 - full name and distinctive spelling
+- display-name variations, alternate surnames, initials, and signature names
 - organization, job title, and website domain
 - phone numbers and signature details
 - conversation participants and project names
 - an explicit message stating that the person changed email addresses
 
 Combine the records only when multiple clues support the match. Choose the most recent, active, professional address as the primary email when the evidence is clear. Keep other verified addresses in `Additional Emails`.
+
+When evidence shows that a person changed employers or roles, keep the person as one contact but flag potentially stale organization, title, office phone, and email details for review. Do not overwrite a verified historical detail with an unverified current assumption.
 
 Do not combine records based only on:
 
@@ -95,7 +141,7 @@ If uncertain, keep separate rows and add both to Needs Review with the proposed 
 
 ## Phone-number extraction and selection
 
-Look first in signatures and direct contact blocks. Capture phone numbers associated with the individual, not unrelated numbers quoted in an email thread.
+Look first in the current message's signature and direct contact blocks. Capture phone numbers associated with the individual, not numbers belonging to quoted third parties, forwarded contacts, project sites, or unrelated participants.
 
 Record the original wording in `Phone as Found`. Prefer a direct or mobile number as the primary `Phone`. Do not use a fax number as the primary phone.
 
@@ -110,3 +156,5 @@ Preserve numbers that already include a valid country code. Interpret `00` or `0
 Store additional verified numbers in `Additional Phones`, separated by commas. Store an extension separately in `Extension`. Use `Phone Type` such as Mobile, Direct, Office, Home, or Other.
 
 If the country, number, ownership, or conversion is uncertain, leave the CRM-ready `Phone` field blank, preserve the original in `Phone as Found`, and add a plain-language review note.
+
+If a number appears to belong to a former employer, preserve it as evidence only when useful, mark it as possibly stale, and keep it out of the CRM-ready phone field until verified.

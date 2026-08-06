@@ -26,22 +26,25 @@ Use these columns in this order:
 10. Extension
 11. Organization
 12. Job Title
-13. Relationship Tags
-14. Project / Niche Tags
-15. Tags
-16. Relationship Summary
-17. First Relevant Date
-18. Most Recent Relevant Date
-19. Relevant Interaction Count
-20. Source Mailbox
-21. Classification Confidence
-22. Phone Confidence
-23. Needs Review
-24. Review Notes
+13. Contact Type
+14. Relationship Tags
+15. Project / Niche Tags
+16. Tags
+17. Relationship Summary
+18. First Relevant Date
+19. Most Recent Relevant Date
+20. Relevant Interaction Count
+21. Source Mailbox
+22. Classification Confidence
+23. Phone Confidence
+24. Needs Review
+25. Review Notes
 
 `Phone` and `Additional Phones` contain only verified E.164 values. `Phone as Found` preserves the readable number taken from the email. Dates use ISO format `YYYY-MM-DD`.
 
 `Relationship Tags` contains only the approved AMI relationship tags. `Project / Niche Tags` contains only the user's approved optional project-type, market-niche, or client-type tags and may be blank. `Tags` combines both approved sets as a comma-separated value for CRM import.
+
+`Contact Type` contains one primary review category from `references/contact-classification.md`. Sort the worksheet so each Contact Type forms a continuous block after the pilot rules are approved. Contact Type is a review aid and does not automatically become a CRM tag.
 
 ## Relevant Interactions worksheet
 
@@ -72,7 +75,9 @@ Use these columns:
 7. Recommended Action
 8. User Decision
 
-Typical review types include Possible Same Person, Shared Email, Uncertain Name, Uncertain Relationship Tag, Uncertain Project / Niche Tag, Uncertain Phone, and Uncertain Professional Relevance.
+Typical review types include Possible Same Person, Shared Email, Uncertain Name, Uncertain Contact Type, Uncertain Relationship Tag, Uncertain Project / Niche Tag, Uncertain Phone, Stale Contact Detail, Uncertain Professional Relevance, and Outreach Suitability.
+
+Use `Processing Progress` rows to make long mailbox work resumable. For each completed batch, record the approved date range, folders searched, pages or result sets completed, messages reviewed, qualifying contacts retained, main exclusion counts, search limitations, and the saved workbook version. These rows are operational records, not contacts for import.
 
 ## Final CSV
 
@@ -86,7 +91,7 @@ Create the CSV only after the user approves the reviewed contact rows. Include o
 - useful relationship history in the Contact Notes or a suitable custom field
 
 Do not include source-message identifiers in the CRM import CSV.
-Keep the separate `Relationship Tags` and `Project / Niche Tags` columns in the review workbook. Include them in the CSV only if the AMI team has created matching custom fields; otherwise import the combined `Tags` column.
+Keep the separate `Contact Type`, `Relationship Tags`, and `Project / Niche Tags` columns in the review workbook. Include them in the CSV only if the AMI team has created matching custom fields; otherwise import the combined `Tags` column and omit Contact Type from the CRM import.
 
 ## Sunshine Island CRM import
 

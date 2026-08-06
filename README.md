@@ -2,7 +2,7 @@
 
 This public Codex plugin helps architects turn relevant email history into a clean, reviewed professional contact list for Sunshine Island CRM.
 
-It guides the user through email-source setup, a small pilot, relationship and project-type tagging, likely duplicate review, phone-number formatting, and preparation of a workbook and CSV. It does not contain anyone's email, contact records, passwords, or connector credentials.
+It guides the user through email-source setup, a small pilot, message-level evidence review, relationship and project-type tagging, contact-type review grouping, likely duplicate review, phone-number formatting, and preparation of a workbook and CSV. It distinguishes substantive professional correspondence from keyword-only false positives and keeps uncertain records in a human review queue. It does not contain anyone's email, contact records, passwords, or connector credentials.
 
 This is an early testing release from the Architect Marketing Institute. The repository is public so invited testers can install it easily. AMI will continue refining the workflow as the pilot develops.
 
@@ -19,7 +19,7 @@ This is an early testing release from the Architect Marketing Institute. The rep
 4. When Codex says the installation is complete, start a new Codex task. This refreshes the list of available skills.
 5. Paste this short starter prompt:
 
-> Use `$ami-contact-list-builder` to help me build a reviewed professional contact list from my email history for Sunshine Island CRM. Ask me the setup questions one at a time.
+> Use `$ami-contact-list-builder` to guide me through building a reviewed professional contact list from my email history for Sunshine Island CRM. Ask setup questions one at a time, begin with a small pilot, and wait for my approval before expanding.
 
 Codex will begin with a few simple questions, then recommend a small pilot before analyzing a larger date range.
 
