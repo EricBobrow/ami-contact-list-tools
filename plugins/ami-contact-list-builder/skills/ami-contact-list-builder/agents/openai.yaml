@@ -1,5 +1,5 @@
 interface:
   display_name: "AMI Professional Contact List Builder"
-  short_description: "Build a segmented CRM list with optional niche tags."
-  default_prompt: "Use $ami-contact-list-builder to build a reviewed contact list from my email history for Sunshine Island CRM, including any optional project or client-type tags I approve."
+  short_description: "Evidence-based professional contact list review."
+  default_prompt: "Use $ami-contact-list-builder to build a reviewed contact list from my email history for Sunshine Island CRM."
   brand_color: "#56B7D3"
